@@ -1,3 +1,4 @@
+#!/bin/bash 
 export CLICOLOR=1
 export GREP_OPTIONS='--color=auto'
 export PS1="\[\e[0;32m\]\w\[\e[0m\] $ "

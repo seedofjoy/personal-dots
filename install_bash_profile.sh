@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash 
 PWD="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 BACKUP_DIR=${PWD}/backup
 NOW=`date +"%Y%m%d_%H-%M-%S"`
