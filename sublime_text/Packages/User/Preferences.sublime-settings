@@ -1,0 +1,25 @@
+{
+    "color_scheme": "Packages/Solarized Color Scheme/Solarized (light).tmTheme",
+    "show_encoding": true,
+    "ignored_packages": ["Vintage"],
+
+    "highlight_line": true,
+    "highlight_modified_tabs": true,
+
+    "always_show_minimap_viewport": true,
+    "enable_tab_scrolling": false,
+    "overlay_scroll_bars": "disabled",
+
+    "ensure_newline_at_eof_on_save": true,
+    "translate_tabs_to_spaces": true,
+
+    "folder_exclude_patterns":
+    [
+        ".svn",
+        ".git",
+        ".hg",
+        ".hgcheck",
+        "CVS",
+        ".idea"
+    ],
+}
