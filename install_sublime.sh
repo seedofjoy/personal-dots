@@ -17,4 +17,4 @@ if [[ -d $SUBLIME_USER_DIR ]]; then
     tar czvf "${BACKUP_DIR}"/sublime.${NOW}.tar.gz "${SUBLIME_USER_DIR}" >/dev/null
 fi
 
-cp -R "${PWD}"/sublime_text/Packages/User "${SUBLIME_USER_DIR}"
+cp -R "${PWD}"/sublime_text/Packages/User/* "${SUBLIME_USER_DIR}"
