@@ -3,7 +3,16 @@ PWD="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 BACKUP_DIR="${PWD}"/backup
 NOW=`date +"%Y%m%d_%H-%M-%S"`
 
-SUBLIME_USER_DIR=~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
+OS=$(uname -s)
+
+case $OS in
+	Linux)
+		SUBLIME_USER_DIR=~/.config/sublime-text-3/Packages/User/
+		;;
+	Darwin)
+		SUBLIME_USER_DIR=~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
+        ;;
+esac
 PACKAGE_CONTROL_PATH="${SUBLIME_USER_DIR}/../../Installed Packages/Package Control.sublime-package"
 PACKAGE_CONTROL_URL="https://sublime.wbond.net/Package%20Control.sublime-package"
 
