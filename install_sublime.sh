@@ -6,11 +6,11 @@ NOW=`date +"%Y%m%d_%H-%M-%S"`
 OS=$(uname -s)
 
 case $OS in
-	Linux)
-		SUBLIME_USER_DIR=~/.config/sublime-text-3/Packages/User/
-		;;
-	Darwin)
-		SUBLIME_USER_DIR=~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
+    Linux)
+        SUBLIME_USER_DIR=~/.config/sublime-text-3/Packages/User/
+        ;;
+    Darwin)
+        SUBLIME_USER_DIR=~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
         ;;
 esac
 PACKAGE_CONTROL_PATH="${SUBLIME_USER_DIR}/../../Installed Packages/Package Control.sublime-package"
