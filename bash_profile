@@ -3,8 +3,12 @@ export CLICOLOR=1
 export GREP_OPTIONS='--color=auto'
 export PS1="\[\e[0;32m\]\w\[\e[0m\] $ "
 
-# MySQL and Homebrew
-export PATH="/usr/local/mysql/bin:/usr/local/bin:$PATH"
+case $OS in
+    Darwin)
+        # MySQL and Homebrew
+        export PATH="/usr/local/mysql/bin:/usr/local/bin:$PATH"
+        ;;
+esac
 
 #
 # Aliases
@@ -20,3 +24,4 @@ alias df="df -h"
 alias du="du -h"
 
 alias py='python'
+alias ipy='ipython'
