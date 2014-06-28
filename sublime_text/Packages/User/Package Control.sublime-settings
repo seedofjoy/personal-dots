@@ -1,13 +1,14 @@
 {
     "installed_packages":
     [
+        "Anaconda",
+        "Better CoffeeScript"
         "Djaneiro",
+        "eco",
+        "Mako",
         "Minifier",
         "Solarized Color Scheme",
         "Solarized Toggle",
         "SublimeCodeIntel",
-        "SublimeLinter",
-        "SublimeLinter-flake8",
-        "SublimeLinter-pylint"
     ]
 }
