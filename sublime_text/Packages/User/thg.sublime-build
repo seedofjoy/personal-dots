@@ -1,0 +1,12 @@
+{
+    "cmd": ["thg", "annotate", "$file"],
+
+    "variants": [
+
+        {
+            "cmd": ["thg", "annotate", "$file"],
+            "name": "thg annotate"
+        }
+
+    ]
+}
