@@ -2,7 +2,7 @@
     "installed_packages":
     [
         "Anaconda",
-        "Better CoffeeScript"
+        "Better CoffeeScript",
         "Djaneiro",
         "eco",
         "Mako",
