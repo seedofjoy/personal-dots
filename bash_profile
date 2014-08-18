@@ -3,8 +3,8 @@ export CLICOLOR=1
 export GREP_OPTIONS='--color=auto'
 export PS1="\[\e[0;32m\]\w\[\e[0m\] $ "
 
-case $OS in
-    Darwin)
+case $OSTYPE in
+    darwin*)
         # MySQL and Homebrew
         export PATH="/usr/local/mysql/bin:/usr/local/bin:$PATH"
         ;;
