@@ -1,14 +1,18 @@
 {
-    "installed_packages":
-    [
-        "Anaconda",
-        "Better CoffeeScript",
-        "Djaneiro",
-        "eco",
-        "Mako",
-        "Minifier",
-        "Solarized Color Scheme",
-        "Solarized Toggle",
-        "SublimeCodeIntel",
-    ]
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Anaconda",
+		"Better CoffeeScript",
+		"Djaneiro",
+		"eco",
+		"Mako",
+		"Minifier",
+		"Package Control",
+		"Solarized Color Scheme",
+		"Solarized Toggle",
+		"SublimeCodeIntel"
+	]
 }
