@@ -1,0 +1,22 @@
+[ui]
+username=Igor Mozharovsky
+editor=nano
+ignore=~/.hgignore
+
+[extensions]
+hgext.mq=
+progress=
+color=
+rebase=
+hgext.extdiff=
+pager=
+hgext.churn=
+
+[extdiff]
+cmd.extdiff=meld
+
+[tortoisehg]
+editor = subl
+
+[pager]
+pager = LESS='FRX' less
