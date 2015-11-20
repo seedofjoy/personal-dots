@@ -1,4 +1,5 @@
 {
+	"bootstrapped": true,
 	"in_process_packages":
 	[
 	],
@@ -12,7 +13,6 @@
 		"Minifier",
 		"Package Control",
 		"Solarized Color Scheme",
-		"Solarized Toggle",
-		"SublimeCodeIntel"
+		"Solarized Toggle"
 	]
 }
