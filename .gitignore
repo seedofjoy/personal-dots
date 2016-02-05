@@ -1,2 +1,7 @@
 backup/*
 !backup/README.md
+sublime_text/Packages/User/Package Control.cache
+sublime_text/Packages/User/Package Control.last-run
+sublime_text/Packages/User/Package Control.merged-ca-bundle
+sublime_text/Packages/User/Package Control.system-ca-bundle
+sublime_text/Packages/User/Package Control.user-ca-bundle
