@@ -6,6 +6,7 @@
 	"installed_packages":
 	[
 		"Anaconda",
+		"Babel",
 		"Better CoffeeScript",
 		"Djaneiro",
 		"eco",
