@@ -12,7 +12,10 @@
 		".hgcheck",
 		"CVS",
 		"__pycache__",
-		".idea"
+		".idea",
+		".vagga",
+		".vagrant",
+		".sass-cache"
 	],
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
