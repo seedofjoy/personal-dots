@@ -14,7 +14,7 @@ case $OS in
         ;;
 esac
 PACKAGE_CONTROL_PATH="${SUBLIME_USER_DIR}/../../Installed Packages/Package Control.sublime-package"
-PACKAGE_CONTROL_URL="https://sublime.wbond.net/Package%20Control.sublime-package"
+PACKAGE_CONTROL_URL="https://packagecontrol.io/Package%20Control.sublime-package"
 
 # Ensure the package directory exists
 mkdir "$(dirname "$PACKAGE_CONTROL_PATH")"
@@ -27,3 +27,8 @@ if [[ -d $SUBLIME_USER_DIR ]]; then
 fi
 
 ln -s "${PWD}"/sublime_text/Packages/User/ "$( dirname "$SUBLIME_USER_DIR" )"
+case $OS in
+    Darwin)
+		ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
+        ;;
+esac
