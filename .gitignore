@@ -1,5 +1,6 @@
 backup/*
 !backup/README.md
+.DS_Store
 sublime_text/Packages/User/Package Control.cache
 sublime_text/Packages/User/Package Control.last-run
 sublime_text/Packages/User/Package Control.merged-ca-bundle
