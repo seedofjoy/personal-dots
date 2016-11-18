@@ -16,12 +16,16 @@
 	],
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
-	"rulers": [80, 120],
 	"ignored_packages":
 	[
 		"Vintage"
 	],
 	"overlay_scroll_bars": "disabled",
+	"rulers":
+	[
+		80,
+		120
+	],
 	"show_encoding": true,
 	"show_panel_on_build": false,
 	"translate_tabs_to_spaces": true
