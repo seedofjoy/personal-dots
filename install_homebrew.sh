@@ -9,6 +9,7 @@ brew install fish
 brew install python3
 brew install node
 brew install yarn
+brew install ffmpeg
 
 brew cask install iterm2
 brew cask install google-chrome
