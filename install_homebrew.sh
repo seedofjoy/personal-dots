@@ -18,3 +18,4 @@ brew cask install dropbox
 brew cask install lastfm
 brew cask install slack
 brew cask install tunnelblick
+brew cask install mplayerx
