@@ -19,7 +19,7 @@ def color_print(color, text):
     print(color + text + Colors.endc)
 
 
-Config = namedtuple('Config', ['source_filename', 'dest_path'])
+Config = namedtuple('Config', ['source_filename', 'dest_path', 'symlink'])
 
 DIR_PATH = os.path.dirname(os.path.realpath(__file__))
 BACKUP_DIR = os.path.join(DIR_PATH, 'backup')
@@ -29,14 +29,25 @@ NOW = datetime.now()
 bash_config = Config(
     source_filename='bash_profile',
     dest_path=os.path.expanduser('~/.bash_profile'),
+    symlink=False,
 )
 fish_config = Config(
     source_filename='config.fish',
     dest_path=os.path.expanduser('~/.config/fish/config.fish'),
+    symlink=False,
 )
-configs = [bash_config, fish_config]
+git_config = Config(
+    source_filename='gitconfig',
+    dest_path=os.path.expanduser('~/.config/git/config'),
+    symlink=True,
+)
+configs = [bash_config, fish_config, git_config]
 
 for conf in configs:
+    dest_dir = os.path.dirname(conf.dest_path)
+    if not os.path.exists(dest_dir):
+        os.makedirs(dest_dir)
+
     if os.path.isfile(conf.dest_path):
         backup_filename = '{filename}.backup.{timestamp}'.format(
             filename=conf.source_filename,
@@ -47,7 +58,10 @@ for conf in configs:
         shutil.move(conf.dest_path, backup_filepath)
 
     source_path = os.path.join(DIR_PATH, conf.source_filename)
-    shutil.copy(source_path, conf.dest_path)
+    if conf.symlink:
+        os.symlink(source_path, conf.dest_path)
+    else:
+        shutil.copy(source_path, conf.dest_path)
 
     is_equal = filecmp.cmp(source_path, conf.dest_path, shallow=False)
     if is_equal:
