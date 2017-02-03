@@ -25,3 +25,12 @@ end
 function hgr
     hg pull --rebase
 end
+
+function g --wraps 'git'
+  git $argv
+end
+
+alias gchm 'git checkout master'
+alias gb 'git branch'
+
+abbr gch='git checkout'

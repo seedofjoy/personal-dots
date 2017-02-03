@@ -1,6 +1,9 @@
 [user]
     name = "Igor Mozharovsky"
 
+[pull]
+    ff = only
+
 [alias]
     st = status
     ci = commit
