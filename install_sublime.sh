@@ -27,8 +27,3 @@ if [[ -d $SUBLIME_USER_DIR ]]; then
 fi
 
 ln -s "${PWD}"/sublime_text/Packages/User/ "$( dirname "$SUBLIME_USER_DIR" )"
-case $OS in
-    Darwin)
-        ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
-        ;;
-esac
